@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Przykładowy widok w Tailwind CSS</title>
+  <!-- Wklej link do Tailwind CDN lub skonfiguruj własne buildy -->
+  <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+</head>
+<body class="bg-gray-100">
+
+<!-- Górny pasek nawigacji -->
+{%  include "composables/top_nav.html" %}
+
+<!-- Główna sekcja strony -->
+<main class="container mx-auto px-4 py-6">
+{% block content %}{% endblock %}
+</main>
+
+<!-- Stopka (opcjonalnie) -->
+<footer class="bg-gray-200 py-4 mt-6">
+  <div class="container mx-auto px-4 text-center text-sm text-gray-600">
+    &copy; 2023 Gry.pl - przykładowa stopka
+  </div>
+</footer>
+
+</body>
+</html>

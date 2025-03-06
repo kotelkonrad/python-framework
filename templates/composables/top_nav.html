@@ -1,0 +1,41 @@
+{% load static %}
+<header class="bg-red-600 text-white">
+  <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+    <!-- Logo i nazwa serwisu -->
+    <div class="flex items-center space-x-2">
+      <!-- Możesz tu dodać np. obrazek kota, jak w oryginalnym gry.pl -->
+      <div class="bg-yellow-400 p-1 rounded-full">
+        <img
+          src="https://via.placeholder.com/30"
+          alt="Logo"
+          class="w-6 h-6"
+        />
+      </div>
+      <span class="text-xl font-bold">Gry.pl</span>
+    </div>
+
+    <!-- Główne linki/kategorie w nawigacji -->
+    <nav class="hidden md:flex items-center space-x-4 font-medium">
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Nowe</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Logiczne</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Akcje</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Multiplayer</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Dziewczyny</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Symulatory</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Zręcznościowe</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Sport</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">MMO</a>
+      <a href="#" class="hover:bg-red-500 px-3 py-1 rounded transition">Dla Ciebie</a>
+    </nav>
+
+    <!-- Wyszukiwarka -->
+    <div class="flex items-center space-x-2">
+      <input
+        type="text"
+        placeholder="Przeszukaj gry..."
+        class="rounded px-3 py-1 text-black outline-none"
+      />
+      <button class="bg-yellow-400 text-black px-3 py-1 rounded">Szukaj</button>
+    </div>
+  </div>
+</header>
